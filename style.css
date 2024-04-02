@@ -11,3 +11,40 @@
     background-size: cover; /* Resize the background image to cover the entire container */
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(imgs/herobackground.jpeg);
 }
+
+.display-1 {
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+    text-align: center;
+    font-family: 'Exo 2', serif;
+  }
+
+  
+  
+.navbar-nav {
+    margin-left: auto;
+  }
+.nav-link {
+    color: white;
+    font-family: 'Exo 2', serif;
+  }
+.nav-link:hover {
+    color: white;
+  }
+.icon-white {
+    color: white;
+  }
+  /* Used to change color of toggler - change rgba element of svg image path */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+  }
+
+
+  #aboutme-section {
+    font-family: 'Reddit Mono';
+    letter-spacing: 10px;
+  }
+ 

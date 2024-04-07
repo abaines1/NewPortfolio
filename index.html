@@ -15,25 +15,93 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Gabarito&family=IBM+Plex+Mono&family=Kalnia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <!-- Custom styles (these can extend the default Bootstrap styles) -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css">
 
   </head>
 
   <body>
-    <!-- Header Image and Title -->
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a href="#hero-section" class="navbar-brand">
+              <i class="bi bi-house-door icon-white"></i>
+            </a>
+            <!-- Navbar toggle button -->
+            <button class="navbar-toggler custom-toggler"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#nav-collapse">
+              <span class="navbar-toggler-icon icon-white"></span>
+            </button>
+            <!-- Navbar should collapse on small screens -->
+            <div id="nav-collapse" class="collapse navbar-collapse">
+              <div class="navbar-nav">
+                <a href="#aboutme-section" class="nav-link" onclick="hideNav()"> About Me </a>
+                <a href="#skills-section" class="nav-link" onclick="hideNav()"> Skills </a>
+                <a href="#project-section" class="nav-link" onclick="hideNav()"> Projects </a>
+                <a href="#contact-section" class="nav-link" onclick="hideNav()"> Contact </a>
+              </div>
+          </div>
+        </div>
+      </nav>
 
+    <section id="section1">
+      <!-- Header Image and Title -->
+      <div class="hero container-fluid">
+          <h2 class="display-1">
+              Austin Baines
+          </h2>
+          <h3>
+              University of Tennessee Knoxville Alumni 
+          </h3>
+          <h4>
+              Upcoming Web Developer
+          </h4>
+      </div>  
+    </section>
     <!-- About Me -->
+    <section> 
+      <div class="container-fluid" id="aboutme-section"> <!-- Check on font-->
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <!-- Carousel -->
+            <div id="myCarousel" class="carousel slide">
+              <!-- Slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/IMG_8139.jpg" class="d-block img-fluid mx-auto" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/Cruise.jpg" class="d-block img-fluid mx-auto" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/cruise2.jpg" class="d-block img-fluid mx-auto" alt="Slide 3">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel"  role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h1 id="aboutme-title"> about me </h1>
+          </div>
+        </div>
+    </section>
 
     <!-- Skills -->
 
     <!-- Projects -->
-
+ 
     <!-- Contact Me -->
-    
+
   </body>
 </html>

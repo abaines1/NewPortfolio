@@ -1,11 +1,12 @@
 #section1 {
     width: 100%;
     padding: 10% 5%;
+    margin-bottom: 50px;
     text-align: center;
     font-family: 'Exo 2', serif;
     color: white;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    min-height: 100vh;
+    min-height: 75vh;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */

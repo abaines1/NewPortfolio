@@ -65,7 +65,9 @@
       </div>  
     </section>
     <!-- About Me -->
-    <section id="aboutme-section" class="d-none d-sm-block">
+    <!-- reads as section will be hidden (d-none) and hidden on xs through large screens, but displayed as block on xl -->
+    <!-- xlarge breakpoint 1200px -->
+    <section id="aboutme-section" class="d-none d-xl-block">
       <div class="container-fluid"> <!-- Check on font-->
         <div class="row">
           <div class="col-12 col-md-6">
@@ -100,10 +102,10 @@
           </div>
         </div>
     </section>
-    <section id="aboutme-section-small" class="d-sm-none">
+    <section id="aboutme-section-small" class="d-xl-none m-5">
       <div class="container-fluid"> <!-- Check on font-->
-        <div class="row">
-          <div class="col-12 col-md-6">
+        <div class="row gy-5">
+          <div class="col-12">
             <!-- Carousel -->
             <div id="myCarousel" class="carousel slide">
               <!-- Slides -->
@@ -126,7 +128,7 @@
               </a>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12">
             <h1 id="aboutme-title"> about me </h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nisi possimus, facere fugiat ratione quo 
               esse praesentium ullam nobis quos unde asperiores inventore! Quis aliquid at repellendus, veniam officia molestias.</p>

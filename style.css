@@ -55,11 +55,6 @@ body {
     letter-spacing: 10px;
   }
 
-.img-fluid {
-    max-width: 50%;
-    height: auto;
-  }
-
 .card {
     background-color: transparent;
     color: white;
@@ -99,4 +94,15 @@ body {
     max-width: 50%;
     max-height: 100%;
     border: 5px solid white;
+  }
+
+  /* #aboutme-section-small .carousel-inner > .carousel-item {
+    max-width: 50%;
+    max-height: 100%;
+    border: 5px solid white;
+    width: 75%;
+  } */
+
+  #aboutme-title {
+    margin-bottom: 35px;
   }

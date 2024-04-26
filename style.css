@@ -1,4 +1,12 @@
-#section1 {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+#hero-section,
+#hero-section-small {
     width: 100%;
     padding: 10% 5%;
     margin-bottom: 50px;
@@ -6,7 +14,6 @@
     font-family: 'Exo 2', serif;
     color: white;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    min-height: 75vh;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -19,8 +26,6 @@
     text-align: center;
     font-family: 'Exo 2', serif;
   }
-
-  
   
 .navbar-nav {
     margin-left: auto;
@@ -44,12 +49,54 @@
   }
 
 
-  #aboutme-section {
+#aboutme-section,
+#aboutme-section-small {
     font-family: 'Reddit Mono';
     letter-spacing: 10px;
   }
- 
-  .img-fluid {
+
+.img-fluid {
     max-width: 50%;
     height: auto;
+  }
+
+.card {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 3px;
+  }
+  
+.card-title {
+    text-align: center;
+    font-family: 'IBM Plex Mono', sans-serif;
+  }
+  
+.card-img-top {
+    height: 150px; 
+    width: 150px; 
+    align-self: center;
+  }
+  
+.card-body {
+    font-size: 20px;
+  }
+  
+
+section {
+    min-height: 100vh;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    scroll-margin-top: 3rem;
+  }
+
+body {
+    background-color: #3c649f;
+    color: white;
+  }
+  
+  .carousel-inner > .carousel-item > img {
+    max-width: 50%;
+    max-height: 100%;
+    border: 5px solid white;
   }

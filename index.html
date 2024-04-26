@@ -50,23 +50,58 @@
         </div>
       </nav>
 
-    <section id="section1">
+    <section id="hero-section" class="d-none d-sm-block m-0">
       <!-- Header Image and Title -->
       <div class="hero container-fluid">
-          <h2 class="display-1">
-              Austin Baines
-          </h2>
-          <h3>
-              University of Tennessee Knoxville Alumni 
-          </h3>
-          <h4>
-              Upcoming Web Developer
-          </h4>
+          <h2 class="display-1">  Austin Baines </h2>
+          <h3> University of Tennessee Knoxville Alumni </h3>
+      </div>  
+    </section>
+    <section id="hero-section-small" class="d-sm-none m-0">
+      <!-- Header Image and Title -->
+      <div class="hero container-fluid">
+          <h2 class="display-1">  Austin Baines </h2>
+          <h3> University of Tennessee Knoxville Alumni </h3>
       </div>  
     </section>
     <!-- About Me -->
-    <section> 
-      <div class="container-fluid" id="aboutme-section"> <!-- Check on font-->
+    <section id="aboutme-section" class="d-none d-sm-block">
+      <div class="container-fluid"> <!-- Check on font-->
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <!-- Carousel -->
+            <div id="myCarousel" class="carousel slide">
+              <!-- Slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/IMG_8139.jpg" class="d-block img-fluid mx-auto" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/Cruise.jpg" class="d-block img-fluid mx-auto" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/cruise2.jpg" class="d-block img-fluid mx-auto" alt="Slide 3">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel"  role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h1 id="aboutme-title"> about me </h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nisi possimus, facere fugiat ratione quo 
+              esse praesentium ullam nobis quos unde asperiores inventore! Quis aliquid at repellendus, veniam officia molestias.</p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab pariatur illum rem magnam quis tempore nesciunt voluptates
+               id explicabo dolor suscipit, ex facere voluptatibus doloremque laboriosam dicta nobis repellendus ipsum!</p>
+          </div>
+        </div>
+    </section>
+    <section id="aboutme-section-small" class="d-sm-none">
+      <div class="container-fluid"> <!-- Check on font-->
         <div class="row">
           <div class="col-12 col-md-6">
             <!-- Carousel -->
@@ -102,8 +137,126 @@
     </section>
 
     <!-- Skills -->
+    <section id="skills-section">
+      <div class="container-fluid">
+        <h1 class="display-1"> Skills </h1>
+        <div class="row text-center">
 
-    <!-- Projects -->
+          <div class="card col-sm-12 col-md-6 col-lg-3" style="border: none">
+            <img src="imgs/html.png" alt="HTML" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title"> HTML5 </h3>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-6 col-lg-3" style="border: none">
+            <img src="imgs/css.jpeg" alt="css" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title"> CSS </h3>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-6 col-lg-3" style="border: none">
+            <img src="imgs/javascript.jpeg" alt="javascript" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title"> JavaScript </h3>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-6 col-lg-3" style="border: none">
+            <img src="imgs/bootstrap.jpeg" alt="bootstrap" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title"> Bootstrap </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+
+          <div class="card col-sm-12 col-md-6 col-lg-3" style="border: none">
+            <img src="imgs/Python-logo-notext.svg.png" alt="Python" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title"> Python </h3>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-6 col-lg-3" style="border: none">
+            <img src="imgs/sql.png" alt="sql" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title"> SQL </h3>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-6 col-lg-3" style="border: none">
+            <img src="imgs/adobe.png" alt="adobe" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title"> Adobe Creative Cloud </h3>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-6 col-lg-3" style="border: none">
+            <img src="imgs/uxui.png" alt="uxdesign" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title"> UX Design </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+  	</section>
+
+    <!-- Project section -->
+    <section id="project-section">
+      <div class="container-fluid">
+
+        <h1 class="display-1"> Projects </h1>
+        <div class="row text-center">
+
+          <div class="col-lg-6 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title"> Publicis Sapient Consulting Project </h5>
+                <a href="https://github.com/abaines1/VacationConsultingProject" target="_blank" class="btn btn-primary btn-sm">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title"> Matching Game </h5>
+                <a href="https://github.com/abaines1/MatchGame" target="_blank" class="btn btn-primary btn-sm">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title"> UX Designer: UTK Parking </h5>
+                <a href="#" class="btn btn-primary btn-sm">
+                  COMING SOON
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title"> This Portfolio! </h5>
+                <a href="https://github.com/abaines1/Portfolio" target="_blank" class="btn btn-primary btn-sm">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
  
     <!-- Contact Me -->
 

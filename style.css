@@ -5,9 +5,15 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
+nav {
+  background-color: #001847;
+}
+
+
 #hero-section,
 #hero-section-small {
     width: 100%;
+    height: 100vh;
     padding: 10% 5%;
     margin-bottom: 50px;
     text-align: center;
@@ -26,7 +32,7 @@ body {
     text-align: center;
     font-family: 'Exo 2', serif;
   }
-  
+
 .navbar-nav {
     margin-left: auto;
   }
@@ -53,8 +59,12 @@ body {
 #aboutme-section-small {
     font-family: 'Reddit Mono';
     letter-spacing: 10px;
-  }
 
+    scroll-margin-top: 10vw !important;
+  }
+#aboutme-section-small {
+  margin-top: 100px !important;
+}
 .card {
     background-color: transparent;
     color: white;
@@ -79,10 +89,10 @@ body {
   
 
 section {
-    min-height: 100vh;
+    min-height: 75vh;
     margin-top: 10vw;
     margin-bottom: 10vw;
-    scroll-margin-top: 3rem;
+    scroll-margin-top: 5rem;
   }
 
 body {
@@ -106,3 +116,40 @@ body {
   #aboutme-title {
     margin-bottom: 35px;
   }
+
+
+  .skills {
+    margin: 45px 0
+  }
+
+  .display-2 {
+    margin-bottom: 7vw;
+    text-align: center;
+    font-family: 'Exo 2', serif;
+  }
+
+  #project-section {
+     min-height: 100vh !important; 
+  }
+
+  #contact-icon {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 70px;
+  }
+  
+  #contact-icon:hover {
+    color: #001847;
+  }
+
+  #footer-section {
+  background-color: #14418a;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 15px; 
+  width: 100%;
+  min-height: 15% !important;
+}

@@ -5,9 +5,28 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
+nav {
+  background-color: #001847;
+}
+
+section {
+  min-height: 75vh;
+  /* margin-top: 10vw;
+  margin-bottom: 10vw; */
+  scroll-margin-top: 5rem;
+}
+
+
+body {
+  background-color: #3c649f;
+  color: white;
+}
+
+
 #hero-section,
 #hero-section-small {
     width: 100%;
+    height: 100vh;
     padding: 10% 5%;
     margin-bottom: 50px;
     text-align: center;
@@ -20,81 +39,19 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(imgs/herobackground.jpeg);
 }
 
-.display-1 {
-    margin-top: 7vw;
-    margin-bottom: 7vw;
-    text-align: center;
-    font-family: 'Exo 2', serif;
-  }
-  
-.navbar-nav {
-    margin-left: auto;
-  }
-.nav-link {
-    color: white;
-    font-family: 'Exo 2', serif;
-  }
-.nav-link:hover {
-    color: white;
-  }
-.icon-white {
-    color: white;
-  }
-  /* Used to change color of toggler - change rgba element of svg image path */
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-.custom-toggler.navbar-toggler {
-    border-color: rgb(255,255,255);
-  }
-
-
 #aboutme-section,
 #aboutme-section-small {
     font-family: 'Reddit Mono';
     letter-spacing: 10px;
-  }
 
-.card {
-    background-color: transparent;
-    color: white;
-    border-color: white;
-    border-radius: 3px;
-  }
-  
-.card-title {
-    text-align: center;
-    font-family: 'IBM Plex Mono', sans-serif;
-  }
-  
-.card-img-top {
-    height: 150px; 
-    width: 150px; 
-    align-self: center;
-  }
-  
-.card-body {
-    font-size: 20px;
-  }
-  
-
-section {
-    min-height: 100vh;
     margin-top: 10vw;
-    margin-bottom: 10vw;
-    scroll-margin-top: 3rem;
-  }
 
-body {
-    background-color: #3c649f;
-    color: white;
-  }
-  
-  .carousel-inner > .carousel-item > img {
-    max-width: 50%;
-    max-height: 100%;
-    border: 5px solid white;
-  }
+    /* scroll-margin-top: 10vw !important; */
+}
+
+/* #aboutme-section-small {
+  margin-top: 100px !important;
+} */
 
   /* #aboutme-section-small .carousel-inner > .carousel-item {
     max-width: 50%;
@@ -103,6 +60,107 @@ body {
     width: 75%;
   } */
 
-  #aboutme-title {
+#aboutme-title {
     margin-bottom: 35px;
-  }
+}
+
+#aboutme-txt,
+#aboutme-txt-small {
+  letter-spacing: 0;
+  line-height: 40px;
+  font-size: 25px;
+}
+  /* #project-section {
+     min-height: 100vh !important; 
+  } */
+
+#contact-icon {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 70px;
+}
+  
+#contact-icon:hover {
+    color: #001847;
+}
+
+#footer-section {
+  background-color: #14418a;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  bottom: 0;
+  margin-bottom: 0;
+  padding: 15px; 
+  width: 100%;
+  min-height: 15% !important;
+}
+
+.display-1 {
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+    text-align: center;
+    font-family: 'Exo 2', serif;
+}
+
+.display-2 {
+  margin-bottom: 7vw;
+  text-align: center;
+  font-family: 'Exo 2', serif;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Exo 2', serif;
+    margin: auto;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+.nav-link:hover {
+    color: white;
+}
+.icon-white {
+    color: white;
+}
+  /* Used to change color of toggler - change rgba element of svg image path */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255);
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 3px;
+}
+  
+.card-title {
+    text-align: center;
+    font-family: 'IBM Plex Mono', sans-serif;
+}
+  
+.card-img-top {
+    height: 150px; 
+    width: 150px; 
+    align-self: center;
+}
+  
+.card-body {
+    font-size: 20px;
+}
+  
+.carousel-inner > .carousel-item > img {
+    max-width: 50%;
+    max-height: 100%;
+    border: 5px solid white;
+}
+
+.skills {
+    margin: 45px 0
+}

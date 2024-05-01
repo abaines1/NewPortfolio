@@ -29,11 +29,8 @@
     <body>
       <!-- NavBar -->
       <!-- navbar needs work am wanting a fixed-right navbar -->
-      <nav class="navbar navbar-expand-md fixed-top">
+      <nav class="navbar fixed-top">
         <div class="container-fluid">
-            <a href="#hero-section" class="navbar-brand">
-              <i class="bi bi-house-door icon-white"></i>
-            </a>
             <!-- Navbar toggle button -->
             <button class="navbar-toggler custom-toggler"
                             data-bs-toggle="collapse"
@@ -41,9 +38,15 @@
               <span class="navbar-toggler-icon icon-white"></span>
             </button>
             <!-- Navbar should collapse on small screens -->
+            <!-- aboutme section needs two differnt for different screens -->
             <div id="nav-collapse" class="collapse navbar-collapse">
               <div class="navbar-nav">
-                <a href="#aboutme-section" class="nav-link" onclick="hideNav()"> About Me </a>
+                <a href="#hero-section" class="nav-link">
+                  <!-- <i class="bi bi-house-door icon-white"></i> -->
+                  Home
+                </a>
+                <a href="#aboutme-section" class="nav-link d-none d-xl-block" onclick="hideNav()"> About Me </a> <!-- hiiden by default, displayed starting at medium and up. visible on medium and up-->
+                <a href="#aboutme-section-small" class="nav-link d-block d-xl-none" onclick="hideNav()"> About Me </a> <!-- displayed as block on all screens, hidden from medium and above-->
                 <a href="#skills-section" class="nav-link" onclick="hideNav()"> Skills </a>
                 <a href="#project-section" class="nav-link" onclick="hideNav()"> Projects </a>
                 <a href="#contact-section" class="nav-link" onclick="hideNav()"> Contact </a>
@@ -97,10 +100,13 @@
           </div>
           <div class="col-12 col-md-6">
             <h1 id="aboutme-title"> about me </h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nisi possimus, facere fugiat ratione quo 
-              esse praesentium ullam nobis quos unde asperiores inventore! Quis aliquid at repellendus, veniam officia molestias.</p>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab pariatur illum rem magnam quis tempore nesciunt voluptates
-               id explicabo dolor suscipit, ex facere voluptatibus doloremque laboriosam dicta nobis repellendus ipsum!</p>
+            <hr>
+            <p id="aboutme-txt-small"> 
+              I'm a passionate front-end developer based in Charlotte, NC, seeking entry-level opportunities that foster growth, learning, and development. 
+              My journey in front-end development is fueled by a commitment to diversity, inclusivity, and continuous improvement. 
+              Outside of work, I love traveling to new and adventurous places, embracing diverse cultures, and striving to be the best version of myself, 
+              both personally and professionally. I believe in contributing my unique perspective to the field, helping to drive the ongoing revolution 
+              in front-end development.</p>
           </div>
         </div>
     </section>
@@ -109,7 +115,7 @@
         <div class="row gy-5">
           <div class="col-12">
             <!-- Carousel -->
-            <div id="myCarousel" class="carousel slide">
+            <div id="myCarousel2" class="carousel slide">
               <!-- Slides -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -122,20 +128,23 @@
                   <img src="imgs/cruise2.jpg" class="d-block img-fluid mx-auto" alt="Slide 3">
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+              <a class="carousel-control-prev" href="#myCarousel2" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               </a>
-              <a class="carousel-control-next" href="#myCarousel"  role="button" data-bs-slide="next">
+              <a class="carousel-control-next" href="#myCarousel2"  role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
               </a>
             </div>
           </div>
           <div class="col-12">
             <h1 id="aboutme-title"> about me </h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nisi possimus, facere fugiat ratione quo 
-              esse praesentium ullam nobis quos unde asperiores inventore! Quis aliquid at repellendus, veniam officia molestias.</p>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab pariatur illum rem magnam quis tempore nesciunt voluptates
-               id explicabo dolor suscipit, ex facere voluptatibus doloremque laboriosam dicta nobis repellendus ipsum!</p>
+            <hr>
+            <p id="aboutme-txt-small"> 
+              I'm a passionate front-end developer based in Charlotte, NC, seeking entry-level opportunities that foster growth, learning, and development. 
+              My journey in front-end development is fueled by a commitment to diversity, inclusivity, and continuous improvement. 
+              Outside of work, I love traveling to new and adventurous places, embracing diverse cultures, and striving to be the best version of myself, 
+              both personally and professionally. I believe in contributing my unique perspective to the field, helping to drive the ongoing revolution 
+              in front-end development.</p>
           </div>
         </div>
     </section>

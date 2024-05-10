@@ -24,12 +24,10 @@ body {
 }
 
 
-#hero-section,
-#hero-section-small {
+#hero-section {
     width: 100%;
     height: 100vh;
-    padding: 10% 5%;
-    margin-bottom: 50px;
+    padding: 100px 100px;
     text-align: center;
     font-family: 'Exo 2', serif;
     color: white;
@@ -39,6 +37,21 @@ body {
     background-size: cover; /* Resize the background image to cover the entire container */
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(imgs/herobackground.jpeg);
 }
+
+#hero-section-small {
+    width: 100%;
+    height: 100vh;
+    padding: 150px 100px;
+    text-align: center;
+    font-family: 'Exo 2', serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(imgs/herobackground.jpeg);
+}
+
 
 #aboutme-section,
 #aboutme-section-small {
@@ -181,3 +194,35 @@ body {
     transform: translateY(0)
   }
 }
+
+.img-hero {
+  max-width: 65%;
+  height: auto;
+  border: white solid 5px;
+  border-radius: 100px;
+  margin-top: 160px;
+}
+
+.hero-title {
+  margin-top: 150px;
+  margin-bottom: 3vw;
+  text-align: center;
+  font-family: 'Exo 2', serif;
+  font-size: calc(1.625rem + 4.5vw);
+}
+
+.hero-title-small {
+  margin-bottom: 3vw;
+  text-align: center;
+  font-family: 'Exo 2', serif;
+  font-size: calc(1.625rem + 4.5vw);
+}
+
+
+.img-hero-small {
+  max-width: 60% !important;
+  height: auto;
+  border: white solid 5px;
+  border-radius: 100px;
+}
+

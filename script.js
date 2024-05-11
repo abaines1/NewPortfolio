@@ -32,18 +32,14 @@ const observerSlideIn = (sections, observer) => {
           console.log('entry is intersecting & section target ', section.target)
           section.target.classList.add('scrolled');
       }
-      else if(section.intersectionRatio < 0.2){
-          section.target.classList.remove('scrolled')
+      else if(section.intersectionRatio < 0.1){
+          section.target.classList.remove('scrolled');
       } 
   });
 };
 
 // Create a new IntersectionObserver instance with the callback function
-const observer = new IntersectionObserver(observerSlideIn, 
-  {
-  threshold: [0, 0.2],
-  rootMargin: '0px 0px -100px 0px'
-});
+const observer = new IntersectionObserver(observerSlideIn, );
 
 // Observe all sections on the page
 document.querySelectorAll('section').forEach(section => {

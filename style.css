@@ -10,13 +10,11 @@ nav {
 }
 
 section {
-  min-height: 75vh;
   /* margin-top: 10vw;
   margin-bottom: 10vw; */
   scroll-margin-top: 5rem;
-  opacity: 0;
+  margin-top: 43vh;
 }
-
 
 body {
   background-color: #3c649f;
@@ -53,14 +51,14 @@ body {
 }
 
 
-#aboutme-section,
-#aboutme-section-small {
+/* #aboutme-section,
+#aboutme-section-small > p{
     font-family: 'Reddit Mono';
     letter-spacing: 10px;
 
-    margin-top: 10vw;
+    margin-top: 10vw; */
     /* scroll-margin-top: 10vw !important; */
-}
+/* } */
 
 /* #aboutme-section-small {
   margin-top: 100px !important;
@@ -82,6 +80,7 @@ body {
   letter-spacing: 0;
   line-height: 40px;
   font-size: 25px;
+  font-family: 'Reddit Mono';
 }
   /* #project-section {
      min-height: 100vh !important; 
@@ -132,8 +131,9 @@ body {
   margin-left: auto;
 }
 
-.nav-link:hover {
-    color: white;
+.project-card:hover {
+  color: black;
+  background-color: white;
 }
 .icon-white {
     color: white;
@@ -167,11 +167,16 @@ body {
 .card-body {
     font-size: 20px;
 }
+
+.project-card {
+  border-radius: 100px;
+}
   
 .carousel-inner > .carousel-item > img {
     max-width: 50%;
     max-height: 100%;
     border: 5px solid white;
+    border-radius: 50px;
 }
 
 .skills {
@@ -220,9 +225,27 @@ body {
 
 
 .img-hero-small {
-  max-width: 60% !important;
+  max-width: 85% !important;
   height: auto;
   border: white solid 5px;
   border-radius: 100px;
+  margin-top: 50px;
+}
+
+.floated {
+  float: left;
+}
+
+.carousel-inner {
+  margin-top: 200px;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+#contact-section {
+  margin-top: 200px;
 }
 

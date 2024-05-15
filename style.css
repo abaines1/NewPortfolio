@@ -9,13 +9,6 @@ nav {
   background-color: #001847;
 }
 
-section {
-  /* margin-top: 10vw;
-  margin-bottom: 10vw; */
-  scroll-margin-top: 5rem;
-  margin-top: 43vh;
-}
-
 body {
   background-color: #3c649f;
   color: white;
@@ -34,6 +27,21 @@ body {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(imgs/herobackground.jpeg);
+}
+
+
+#hero-section-large {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 100px;
+  text-align: center;
+  font-family: 'Exo 2', serif;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(imgs/herobackground.jpeg);
 }
 
 #hero-section-small {
@@ -72,6 +80,7 @@ body {
   } */
 
 #aboutme-title {
+    margin-top: 35px;
     margin-bottom: 35px;
 }
 
@@ -241,3 +250,7 @@ body {
   margin-top: 200px;
 }
 
+section {
+  scroll-margin-top: 5rem;
+  margin-top: 100px;
+}

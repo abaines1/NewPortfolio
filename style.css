@@ -173,7 +173,7 @@ body {
 }
   
 .carousel-inner > .carousel-item > img {
-    max-width: 50%;
+    max-width: 70%;
     max-height: 100%;
     border: 5px solid white;
     border-radius: 50px;
@@ -230,14 +230,6 @@ body {
   border: white solid 5px;
   border-radius: 100px;
   margin-top: 50px;
-}
-
-.floated {
-  float: left;
-}
-
-.carousel-inner {
-  margin-top: 200px;
 }
 
 .nav-link:hover {

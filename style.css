@@ -208,18 +208,15 @@ body {
     transform: translateY(0)
   }
 }
-
+/* Change 2: Remove margin */
 .img-hero {
   max-width: 65%;
   height: auto;
   border: white solid 5px;
   border-radius: 100px;
-  margin-top: 160px;
 }
-
+/* 1) Change 1: Remove margins */
 .hero-title {
-  margin-top: 150px;
-  margin-bottom: 3vw;
   text-align: center;
   font-family: 'Exo 2', serif;
   font-size: calc(1.625rem + 4.5vw);

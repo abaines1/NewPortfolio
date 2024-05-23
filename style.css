@@ -210,7 +210,7 @@ body {
 }
 /* Change 2: Remove margin */
 .img-hero {
-  max-width: 65%;
+  max-width: 70%;
   height: auto;
   border: white solid 5px;
   border-radius: 100px;

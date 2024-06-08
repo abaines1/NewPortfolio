@@ -80,8 +80,8 @@ body {
   } */
 
 #aboutme-title {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin: 35px 35px;
+
 }
 
 #aboutme-txt,
@@ -125,7 +125,7 @@ body {
 }
 
 .display-2 {
-  margin-bottom: 7vw;
+  /* margin-bottom: 7vw; */
   text-align: center;
   font-family: 'Exo 2', serif;
 }
@@ -193,7 +193,6 @@ body {
 }
 
 .scrolled {
-  opacity: 0;
   transform: translateY(20px);
   animation: scroll-in 3s both; 
 }
@@ -240,13 +239,16 @@ body {
 .nav-link:hover {
   background-color: white;
   color: black;
+  border-radius: 20px;
+  margin: 0;
 }
 
-#contact-section {
+/* #contact-section {
   margin-top: 200px;
-}
+} */
 
 section {
   scroll-margin-top: 5rem;
   margin-top: 100px;
+  opacity: 0;
 }

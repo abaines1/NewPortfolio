@@ -26,24 +26,30 @@ window.onscroll = onScroll;
 
 
 const observerSlideIn = (sections, observer) => {
-  console.log('sections ', sections)
+  // console.log('Sections being observed (not in intersecting view yet): \n', sections)
   sections.forEach(section => {
       if (section.isIntersecting) {
-          console.log('entry is intersecting & section target ', section.target)
+          console.log(`The entry is intersecting, and returns the section targeted: \n ${section.target.id}`)
           section.target.classList.add('scrolled');
       }
-      else if(section.intersectionRatio < 0.1){
+      else {
+          console.log(`The targeted section ${section.target.id} is not interesecting and out of viewport`)
           section.target.classList.remove('scrolled');
       } 
   });
 };
 
 // Create a new IntersectionObserver instance with the callback function
-const observer = new IntersectionObserver(observerSlideIn, );
+const observer = new IntersectionObserver(observerSlideIn, {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+}
+);
 
 // Observe all sections on the page
 document.querySelectorAll('section').forEach(section => {
-  console.log('section queryAll', section)
+  console.log('Selection of all sections on page: \n', section)
   observer.observe(section);
 });
 

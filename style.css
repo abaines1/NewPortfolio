@@ -6,14 +6,8 @@ body {
 }
 
 nav {
-  background-color: #001847;
+  background-color: #0B3C49;
 }
-
-body {
-  background-color: #3c649f;
-  color: white;
-}
-
 
 #hero-section {
     width: 100%;
@@ -59,26 +53,6 @@ body {
 }
 
 
-/* #aboutme-section,
-#aboutme-section-small > p{
-    font-family: 'Reddit Mono';
-    letter-spacing: 10px;
-
-    margin-top: 10vw; */
-    /* scroll-margin-top: 10vw !important; */
-/* } */
-
-/* #aboutme-section-small {
-  margin-top: 100px !important;
-} */
-
-  /* #aboutme-section-small .carousel-inner > .carousel-item {
-    max-width: 50%;
-    max-height: 100%;
-    border: 5px solid white;
-    width: 75%;
-  } */
-
 #aboutme-title {
     margin: 35px 35px;
 
@@ -91,12 +65,9 @@ body {
   font-size: 25px;
   font-family: 'Reddit Mono';
 }
-  /* #project-section {
-     min-height: 100vh !important; 
-  } */
 
 #contact-icon {
-    color: white;
+    color: #0B3C49;
     font-size: 70px;
     margin-bottom: 70px;
 }
@@ -106,7 +77,7 @@ body {
 }
 
 #footer-section {
-  background-color: #14418a;
+  background-color: #0B3C49;
   color: white;
   text-align: center;
   vertical-align: center;
@@ -140,8 +111,8 @@ body {
 }
 
 .project-card:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #0B3C49;
 }
 .icon-white {
     color: white;
@@ -156,8 +127,7 @@ body {
 
 .card {
     background-color: transparent;
-    color: white;
-    border-color: white;
+    border-color: black;
     border-radius: 3px;
 }
   

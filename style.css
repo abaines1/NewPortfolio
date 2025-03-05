@@ -221,3 +221,12 @@ section {
   margin-top: 100px;
   opacity: 0;
 }
+
+/* New CSS - March 5th 2025 */
+#rent-ready {
+  display: none;
+}
+
+#certifications {
+  display: none;
+}

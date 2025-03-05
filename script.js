@@ -76,3 +76,21 @@ function hideNav() {
 function sendEmail() {
   window.location.assign("mailto:abaines1@vols.utk.edu");
 }
+
+// Show Bullet Points on Button Click for Rent Ready Work Experience
+function rentreadyDetails() {
+  if (document.getElementById("rent-ready").style.display === "block") {
+    document.getElementById("rent-ready").style.display = "none";
+  } else {
+  document.getElementById("rent-ready").style.display = "block";
+  }
+
+}
+
+function certificationDetails() {
+  if (document.getElementById("certifications").style.display === "block") {
+    document.getElementById("certifications").style.display = "none";
+  } else {
+  document.getElementById("certifications").style.display = "block";
+  }
+}
